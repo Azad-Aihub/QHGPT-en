@@ -32,7 +32,7 @@ export const post: APIRoute = async (context) => {
 
  
   if (sk == demoKey) {
-    return new Response("🙏 请看下方 告示 ，并在 拈花 处填入 API KEY")
+    return new Response("🙏 PLEASE SEE THE NOTICE BELOW AND FILL IN THE 「API KEY」 IN The Flower Sermon")
   }
 
   const prompt = prompts.find((item) => item.role == setting.role)?.prompt || setting.customRule;
