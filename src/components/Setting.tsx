@@ -32,7 +32,7 @@ export default function Setting(props: {
           }}
         >
           <IconEnv />
-          <span ml-1>拈花</span>
+          <span ml-1>The Flower Sermon</span>
         </div>
       </div>
       <hr class="mt-2 bg-slate-5 bg-op-15 border-none h-1px"></hr>
@@ -40,7 +40,7 @@ export default function Setting(props: {
         <SettingItem icon="i-carbon:api" label="API Key">
           <input
             type="password"
-            placeholder="必需，请看下方说明"
+            placeholder="Necessary. Please see below."
             value={props.setting().openaiAPIKey}
             class="max-w-150px ml-1em px-1 text-slate rounded-sm bg-slate bg-op-15 focus:bg-op-20 focus:ring-0 focus:outline-none placeholder:text-slate-400 placeholder:op-30"
             onInput={e => {
@@ -51,7 +51,7 @@ export default function Setting(props: {
             }}
           />
         </SettingItem>
-        <SettingItem icon="i-carbon:user-online" label="自定义系统角色">
+        <SettingItem icon="i-carbon:user-online" label="Customize the system role.">
           <input
             type="text"
             value={props.setting().customRule}
